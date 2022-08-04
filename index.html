@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="icon" href="dice-1.png" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Roll OR Hold</title>
+  </head>
+  <body>
+    <div class="modal hidden">
+      <button class="close-modal">&times;</button>
+      <h1 class="rules-heading">RULES</h1>
+      <p>
+        <ol class="rules">
+          <li>Player 1 goes first. <strong>"ROLL"</strong> the die for your first turn.</li>
+          <li>Score will be counted on the current score if the number rolled is two, three, four, five, or six points. If you roll a one, you lose all the points you accumulated during that turn, and you lose your turn.</li>
+          <li>Continue rolling the die until you're happy with the number of points you've scored. Then, <strong>"HOLD"</strong> by handing the die over to your opponent, and track all points earned during your turn. </li>
+          <li>Second player continues the same. Reach <strong>100</strong> points first and win the game. 
+          </li>
+        </ol>
+        <p class="tip">"Knowing when to stop rolling and end your turn is the key to winning, It's an exercise in deciding between gut, instinct and greed" </p>
+      </p>
+    </div>
+    <div class="overlay hidden"></div>
+  <section class="body">
+    <button class="how">How-To-Play</button>
+    <main>
+      <section class="player player--0 player--active">
+        <h2 class="name" id="name--0">Player 1</h2>
+        <p class="score" id="score--0">❌</p>
+        <div class="current">
+          <p class="current-label">Current</p>
+          <p class="current-score" id="current--0">0</p>
+        </div>
+      </section>
+      <section class="player player--1">
+        <h2 class="name" id="name--1">Player 2</h2>
+        <p class="score" id="score--1">❌</p>
+        <div class="current">
+          <p class="current-label">Current</p>
+          <p class="current-score" id="current--1">0</p>
+        </div>
+      </section>
+
+      <img src="dice-6.png" alt="Playing dice" class="dice" />
+      <button class="btn btn--new">🔄 New game</button>
+      <button class="btn btn--roll">🎲 Roll dice</button>
+      <button class="btn btn--hold">📥 Hold</button>
+
+      
+    </main>
+    <section class="about">
+      <p>ABOUT ME:</p>
+      <ul class="about-icons">
+        <li class="link-icons"><a href="https://www.linkedin.com/in/tushar-rathi-361731204/" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+        <li class="link-icons"><a href="https://www.facebook.com/tusharrathi173/" target="_blank"><ion-icon name="logo-facebook"></ion-icon></a></li>
+        <li class="link-icons"><a href="mailto:tusharrathi2021@outlook.com" target="_blank"><ion-icon name="mail-outline"></ion-icon></a></li>
+         </ul>
+    </section>
+  </section>
+    <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+   </body>
+</html>
